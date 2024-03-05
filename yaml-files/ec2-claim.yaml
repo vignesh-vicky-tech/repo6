@@ -1,0 +1,15 @@
+---
+apiVersion: compositions.io/v1alpha1
+kind: Instance
+metadata:
+  name: "repo6-ec2"
+spec:
+  parameters:
+    region: "us-east-1"
+    ami: "ami-03f4878755434977f"
+    instanceType: "t2.medium"
+    keyName: "repo6-key"
+  compositionRef:
+    name: ec2-instance
+
+
